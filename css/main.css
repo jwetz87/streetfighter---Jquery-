@@ -22,7 +22,8 @@ body {
 
 .ryu {
  
-    float: left;
+    position: absolute;
+	left: 20px;
     
 }
 

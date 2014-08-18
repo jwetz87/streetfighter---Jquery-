@@ -39,16 +39,16 @@ var $ryupics = $(".ryupics");
    $ryupics.hide();  
    $cool.show();
   }
- //else if (event which==83){
-    //$ryupics.hide();
-    //$ready.show();
-    //$('.ryu').css({'left':'+=5px'});       
-  //}
-    //else if (event which==65){
-    //$ryupics.hide();
-    //$ready.show();
-    //$('.ryu').css({'left':'-=5px'});    
-//}
+ else if (event which==83){
+    $ryupics.hide();
+    $ready.show();
+    $('.ryu').css({'left':'+=5px'});       
+  }
+    else if (event which==65){
+    $ryupics.hide();
+    $ready.show();
+    $('.ryu').css({'left':'-=5px'});    
+}
 );
    $(this).keyup(function(event){
    if(event.which==88)  
