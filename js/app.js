@@ -39,12 +39,12 @@ var $ryupics = $(".ryupics");
    $ryupics.hide();  
    $cool.show();
   }
- else if (event which==83){
+ else if (event.which==83){
     $ryupics.hide();
     $ready.show();
     $('.ryu').css({'left':'+=5px'});       
   }
-    else if (event which==65){
+    else if (event.which==65){
     $ryupics.hide();
     $ready.show();
     $('.ryu').css({'left':'-=5px'});    
