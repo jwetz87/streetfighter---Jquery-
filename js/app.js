@@ -22,11 +22,11 @@ var $ryupics = $(".ryupics");
     $ryuThrow.show();
     $hadouken.finish().show()
     .animate(
-      {'left': '300px'},
-      500,
+      {'left': '975px'},
+      1000,
       function() {
         $(this).hide();
-        $(this).css('left', '-212px');
+        $(this).css('left', '475px');
       }
     );
   })
