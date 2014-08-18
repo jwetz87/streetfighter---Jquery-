@@ -8,8 +8,11 @@ body {
 }
 
 .main {
-
-    background-color:white;
+    border-top: 5px solid gold;
+    border-bottom: 5px solid gold;
+    background:url('../images/ssf2-02-ken.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     margin-top: 110px;
     padding-left: 100px;
     min-width: 1200px;
