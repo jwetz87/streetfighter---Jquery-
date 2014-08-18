@@ -22,12 +22,15 @@ body {
 
 .ryu {
  
-    position: absolute;
+    position: relative;
 	left: 20px;
     
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+  position: absolute;
+  top: 0px;
+  left: 0px;	
   width: 659px;
   height: 494px;
 }

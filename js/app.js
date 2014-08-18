@@ -9,16 +9,16 @@ var $ryupics = $(".ryupics");
 	
 	
   $('.ryu').mouseenter(function() {
-    $still.hide();
+    $ryupics.hide();
     $ready.show();
   })
   .mouseleave(function() {
-    $ready.hide();
+    $ryupics.hide();
     $still.show();
   })
   .mousedown(function() {
     playHadouken();    
-    $ready.hide();
+    $ryupics.hide();
     $ryuThrow.show();
     $hadouken.finish().show()
     .animate(
@@ -31,7 +31,7 @@ var $ryupics = $(".ryupics");
     );
   })
   .mouseup(function() {
-    $ryuThrow.hide();
+    $ryupics.hide();
     $ready.show();
   });
   $(this).keydown(function(event){
