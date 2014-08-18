@@ -49,7 +49,7 @@ var $ryupics = $(".ryupics");
     $ready.show();
     $('.ryu').css({'left':'-=5px'});    
 }
-);
+  });
    $(this).keyup(function(event){
    if(event.which==88)  
    $ryupics.hide();  
