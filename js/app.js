@@ -35,7 +35,7 @@ var $ryupics = $(".ryupics");
     $ready.show();
   });
   $(this).keydown(function(event){
-   if(event.which==88)  
+   if(event.which==88){  
    $ryupics.hide();  
    $cool.show();
   }
