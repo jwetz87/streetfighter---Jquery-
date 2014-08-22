@@ -69,3 +69,20 @@ body {
     top: 173px;
     left: 475px;
 }
+
+.instructions {
+    
+    font-size: 20pt;
+    font-family: 'Press Start 2P', cursive;
+    background: #CCC;
+    color: black;
+    border: 4px black solid;
+    border-radius: 20px;
+    
+}
+.instructions p {
+
+    padding: 3px 15px;
+    
+    
+}
