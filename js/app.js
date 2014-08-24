@@ -9,47 +9,47 @@ var $ryupics = $(".ryupics");
 	
 	
   $('.ryu').mouseenter(function() {
-    $still.hide();
+    $ryupics.hide();
     $ready.show();
   })
   .mouseleave(function() {
-    $ready.hide();
+    $ryupics.hide();
     $still.show();
   })
   .mousedown(function() {
     playHadouken();    
-    $ready.hide();
+    $ryupics.hide();
     $ryuThrow.show();
     $hadouken.finish().show()
     .animate(
-      {'left': '300px'},
-      500,
+      {'left': '975px'},
+      1000,
       function() {
         $(this).hide();
-        $(this).css('left', '-212px');
+        $(this).css('left', '475px');
       }
     );
   })
   .mouseup(function() {
-    $ryuThrow.hide();
+    $ryupics.hide();
     $ready.show();
   });
   $(this).keydown(function(event){
-   if(event.which==88)  
+   if(event.which==88){  
    $ryupics.hide();  
    $cool.show();
   }
- //else if (event which==83){
-    //$ryupics.hide();
-    //$ready.show();
-    //$('.ryu').css({'left':'+=5px'});       
-  //}
-    //else if (event which==65){
-    //$ryupics.hide();
-    //$ready.show();
-    //$('.ryu').css({'left':'-=5px'});    
-//}
-);
+ else if (event.which==83){
+    $ryupics.hide();
+    $ready.show();
+    $('.ryu').css({'left':'+=5px'});       
+  }
+    else if (event.which==65){
+    $ryupics.hide();
+    $ready.show();
+    $('.ryu').css({'left':'-=5px'});    
+}
+  });
    $(this).keyup(function(event){
    if(event.which==88)  
    $ryupics.hide();  
@@ -65,6 +65,3 @@ function playHadouken () {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 }
-		
-		
-		
